@@ -1,3 +1,13 @@
+<?php
+echo 'Hello World!';
+echo '<br/>';
+echo 'Ilias', ' ', 'Pavlakos';
+//echo 'Ilias', ' ', 'Pavlakos';
+/*
+ * block comment
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Learn PHP From Scratch</title>
+    <title>Learn PHP From Scratch <?php echo 'with Ilias';?></title>
 </head>
 
 <body class="bg-gray-100">
@@ -17,7 +27,7 @@
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4">Welcome To The Course</h2>
-            <p>In this course, you will learn the fundamentals of the PHP language</p>
+            <p><?= '<p>In this course, you will learn the fundamentals of the PHP language</p>' ?></p>
         </div>
     </div>
 </body>
