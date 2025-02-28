@@ -1,3 +1,20 @@
+<?php
+
+require 'database.php';
+global $pdo;
+
+$stmt = $pdo->query("SELECT * FROM posts");
+
+$stmt->execute();
+
+$results = $stmt->fetchAll();
+
+//echo '<pre>';
+//var_dump($results);
+//echo '<pre/>'
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
