@@ -1,5 +1,28 @@
 <?php
 $output = null;
+
+$string1 = 'Hello World';
+
+$output = strlen($string1);
+
+$output = str_word_count($string1);
+
+$output = strpos($string1, 'World');
+
+$output = $string1[4]; // o
+
+$output = substr($string1, 6); // World
+
+$output = str_replace('World', 'Universe', $string1);
+
+$output = strtolower($string1);
+
+$output = strtoupper($string1);
+
+$output = ucwords($string1);
+
+$output = trim('   Hello World ')
+
 ?>
 
 <!DOCTYPE html>
