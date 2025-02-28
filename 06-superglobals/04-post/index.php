@@ -1,3 +1,17 @@
+<?php
+
+echo $_SERVER['REQUEST_METHOD'];
+
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+
+    $title = isset($_POST['title']) ? htmlspecialchars($_POST['title']) : '';
+    $description = isset($_POST['description']) ? htmlspecialchars($_POST['description']) : '';
+
+    echo $title, $description;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
