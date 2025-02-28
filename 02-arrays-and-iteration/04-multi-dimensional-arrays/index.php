@@ -1,5 +1,36 @@
 <?php
 $output = null;
+//
+//$fruits = [
+//        ['apple','red'],
+//        ['banana','yellow'],
+//        ['orange', 'orange']
+//];
+//
+//$output = $fruits[0][0];
+//
+//$fruits[] = ['grape', 'purple'];
+//
+//print_r($fruits);
+
+
+
+
+$users = [
+        ['name' => 'John', 'email' => 'john@example.com', 'password' => 'password123'],
+    ['name' => 'Marry', 'email' => 'marry@example.com', 'password' => 'password123'],
+    ['name' => 'Tim', 'email' => 'tim@example.com', 'password' => 'password123'],
+];
+
+$output = $users[1]['email'];
+
+$users[] = ['name' => 'Kim', 'email' => 'kim@example.com', 'password' => 'password123'];
+
+array_push($users, ['name' => 'Larry', 'email' => 'larry@example.com', 'password' => 'password123']);
+
+print_r($users);
+
+
 ?>
 
 <!DOCTYPE html>
