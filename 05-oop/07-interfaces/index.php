@@ -1,3 +1,40 @@
+<?php
+
+interface IContent
+{
+    public function edit();
+
+    public function display();
+}
+
+class Article implements IContent {
+
+    private $title;
+    private $content;
+
+    public function __construct($title, $content){
+        $this->title = $title;
+        $this->content = $content;
+    }
+
+    public function edit(){
+        echo 'Editing the article';
+    }
+
+    public function display(){
+        echo $this->title;
+        echo '<br/>';
+        echo $this->content;
+        echo '<br/>';
+    }
+}
+
+echo '<br/>';
+
+$art1 = new Article('Title 1', 'Content 1');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +53,7 @@
   </header>
   <div class="container mx-auto p-4 mt-4">
     <div class="bg-white rounded-lg shadow-md p-6 mt-6">
-      <!-- Output -->
+        <?= $art1->display(); ?>
     </div>
   </div>
 </body>
