@@ -13,7 +13,7 @@ class User
   }
 
   // Methods
-  public function login()
+  protected function login()
   {
     echo $this->name . ' logged in <br>';
   }
