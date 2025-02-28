@@ -1,3 +1,9 @@
+<?php
+
+$username = $_COOKIE['username'] ?? null;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +12,7 @@
 </head>
 
 <body>
-  <h1>Welcome Guest</h1>
+  <h1>Welcome <?=  $username ?? 'Guest' ?></h1>
   <a href="destroy.php">Delete cookie</a>
 </body>
 
