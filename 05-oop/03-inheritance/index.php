@@ -17,3 +17,23 @@ class User
     echo $this->name . ' logged in <br>';
   }
 }
+
+class Admin extends User {
+    public $level;
+
+    public function __construct($name, $email, $level){
+        parent::__construct($name, $email);
+        $this->level = $level;
+    }
+
+    public function login()
+    {
+        echo 'Admin ' . $this->name . ' logged in <br>';
+    }
+}
+
+$admin1 = new Admin('John Doe', 'john@doe.com', 2);
+
+var_dump($admin1);
+
+$admin1->login();
