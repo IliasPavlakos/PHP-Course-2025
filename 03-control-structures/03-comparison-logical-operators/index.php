@@ -15,6 +15,24 @@
 | >=       | Greater than or equal to |
 */
 
+$x = 10;
+$y = '10';
+
+var_dump($x == $y);
+echo '<br/>';
+
+var_dump($x === $y);
+echo '<br/>';
+
+var_dump($x != $y);
+echo '<br/>';
+
+var_dump($x !== $y);
+echo '<br/>';
+
+var_dump($x >= $y);
+echo '<br/>';
+
 
 /*
 | Logical Operators
@@ -27,3 +45,15 @@
 | xor      | True if one is true    |
 | !        | True if it is not true |
 */
+
+var_dump(true && false);
+echo '<br/>';
+
+var_dump(true || false);
+echo '<br/>';
+
+var_dump(true xor false);
+echo '<br/>';
+
+var_dump(!true xor false);
+echo '<br/>';
