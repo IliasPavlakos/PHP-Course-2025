@@ -10,6 +10,11 @@
 */
 echo '<h3>Sum Of An Array</h3>';
 
+$numbers = [1,2,3,4,5,6,7,8,9];
+$total = array_sum($numbers);
+$count = count($numbers);
+echo "The sum of the {amount} numbers is: $total";
+
 /*
   Challenge 2: Colors array
 
@@ -25,6 +30,16 @@ echo '<h3>Colors Array</h3>';
 
 $colors = ['red', 'blue', 'green', 'yellow'];
 
+$colors = array_reverse($colors);
+
+array_push($colors, 'purple', 'orange');
+
+$colors[1] = 'pink';
+
+array_pop($colors);
+
+print_r($colors);
+
 /*
   Challenge 3: Job listings array
 
@@ -35,3 +50,20 @@ $colors = ['red', 'blue', 'green', 'yellow'];
 */
 
 echo '<h3>Job Listings</h3>';
+
+$jobs = [
+    [
+    'id' => 1,
+    'job_title' => 'Web Developer',
+    'company' => 'Google',
+    'contact_email' => 'google@example.com',
+    'contact_phone' => '0123456789',
+    'skills' => ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS']
+        ]
+];
+
+$jobs[] = $jobs[0];
+$jobs[] = $jobs[0];
+
+echo $jobs[1]['job_title'];
+echo $jobs[2]['skills'][0];
