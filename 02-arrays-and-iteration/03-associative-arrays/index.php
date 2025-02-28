@@ -1,5 +1,23 @@
 <?php
 $output = null;
+
+$user = [
+        'name' => 'John',
+    'email' => 'john@example.com',
+    'password' => '123456789',
+    'hobbies' => ['tennis', 'video games']
+];
+
+$output = $user['name'];
+$output = $user['email'];
+
+//$output = $user['email2']; // error
+
+$output = $user['hobbies'][0];
+
+$user['address'] = '1234 Main St';
+$output = $user['address'];
+
 ?>
 
 <!DOCTYPE html>
